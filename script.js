@@ -4,7 +4,7 @@ var timeSection = $("#currentDay")
 timeSection.append(timeDisplay)
 var saveBtn = document.querySelectorAll("button")
 
-var timeList = [
+var timesList = [
     "9 AM",
     "10 AM",
     "11 AM",
@@ -27,3 +27,7 @@ var times = [
     "15",
     "17",
 ];
+
+for (var i = 0; i < timesList.length; i++) {
+}
+
