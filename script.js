@@ -65,5 +65,9 @@ $("button1").on("click", function(event) {
     var text3 = $("textarea")[2].value;
     var text4 = $("textarea")[3].value;
     var text5 = $("textarea")[4].value;
+    var text6 = $("textarea")[5].value;
+    var text7 = $("textarea")[6].value;
+    var text8 = $("textarea")[7].value;
+    var text9 = $("textarea")[8].value;
 }
 
