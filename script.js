@@ -1,7 +1,7 @@
 var timeBlock = $(".container");
 var timeFrame = moment().format(`MMMM Do YYYY`)
 var timeSection = $("#currentDay")
-timeSection.append(timeDisplay)
+timeSection.append(timeFrame)
 var saveBtn = document.querySelectorAll("button")
 
 var timesList = [
@@ -69,11 +69,36 @@ $("button1").on("click", function(event) {
     var text7 = $("textarea")[6].value;
     var text8 = $("textarea")[7].value;
     var text9 = $("textarea")[8].value;
-    localStorage.setItem("text1", text1)
-    localStorage.setItem("text2", text2)
-    localStorage.setItem("text3", text3)
-    localStorage.setItem("text4", text4)
-    localStorage.setItem("text5", text5)
-    localStorage.setItem("text6", text6)
+    
+    localStorage.setItem("text1", text1);
+    localStorage.setItem("text2", text2);
+    localStorage.setItem("text3", text3);
+    localStorage.setItem("text4", text4);
+    localStorage.setItem("text5", text5);
+    localStorage.setItem("text6", text6);
+    localStorage.setItem("text7", text7);
+    localStorage.setItem("text8", text8);
+    localStorage.setItem("text9", text9);
+});
+
+function hourUpdater() {
+    var hour = moment().hours();
+    $(".time-block").each(function() {
+        var blockHour = parseInt($(this).attr("id").split(" ")[0]);
+        if (blockHour < hour) {
+            $(this).addclass("past");
+          } else if (blockHour === hour) {
+              $(this).removeClass("past");
+              $(this).addclass("present");
+          } else {
+              $(this).removeClass("past");
+              $(this).removeClass("present");
+              $(this).addClass("future");
+          }
+        });
 }
 
+hourUpdater();
+
+var seeTime = setInterval(hourUpdater, 15000);
+    
