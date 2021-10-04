@@ -69,5 +69,11 @@ $("button1").on("click", function(event) {
     var text7 = $("textarea")[6].value;
     var text8 = $("textarea")[7].value;
     var text9 = $("textarea")[8].value;
+    localStorage.setItem("text1", text1)
+    localStorage.setItem("text2", text2)
+    localStorage.setItem("text3", text3)
+    localStorage.setItem("text4", text4)
+    localStorage.setItem("text5", text5)
+    localStorage.setItem("text6", text6)
 }
 
