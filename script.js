@@ -3,7 +3,7 @@ var timeFrame = moment().format(`MMMM Do YYYY`)
 var timeSection = $("#currentDay")
 timeSection.append(timeFrame)
 var saveBtn = document.querySelectorAll("button")
-
+/*/ list of times /*/
 var timesList = [
     "9 AM",
     "10 AM",
@@ -27,7 +27,7 @@ var times = [
     "15",
     "17",
 ];
-
+/*/ time block /*/
 for (var i = 0; i < timesList.length; i++) {
     var row1 = $("<div class=`row time-block`>").attr("id", times[i]);
     var div1 = $("<div class=`hour col-1'>")
@@ -43,7 +43,7 @@ for (var i = 0; i < timesList.length; i++) {
     row1.append(button1)
 
 }
-
+/*/ saves calendar info /*/
 localStorageFunction();
 
 function localStorageFunction() {
@@ -57,7 +57,7 @@ function localStorageFunction() {
     $("textarea")[7].value = localStorage.getItem("textarea8")
     $("textarea")[8].value = localStorage.getItem("textarea9")
 }
-
+/*/ boxes to put info in /*/
 $("button1").on("click", function(event) {
     event.preventDefault();
     var text1 = $("textarea")[0].value;
@@ -80,7 +80,7 @@ $("button1").on("click", function(event) {
     localStorage.setItem("text8", text8);
     localStorage.setItem("text9", text9);
 });
-
+/*/ function to keep up with the curent time /*/
 function hourUpdater() {
     var hour = moment().hours();
     $(".time-block").each(function() {
