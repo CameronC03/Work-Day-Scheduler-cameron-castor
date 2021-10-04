@@ -58,3 +58,12 @@ function localStorageFunction() {
     $("textarea")[8].value = localStorage.getItem("textarea9")
 }
 
+$("button1").on("click", function(event) {
+    event.preventDefault();
+    var text1 = $("textarea")[0].value;
+    var text2 = $("textarea")[1].value;
+    var text3 = $("textarea")[2].value;
+    var text4 = $("textarea")[3].value;
+    var text5 = $("textarea")[4].value;
+}
+
