@@ -1,5 +1,5 @@
 var timeBlock = $(".container");
-var timeFrame = moment().format(`MMMM Do YYYY`)
+var timeFrame = moment().format('MMMM Do YYYY')
 var timeSection = $("#currentDay")
 timeSection.append(timeFrame)
 var saveBtn = document.querySelectorAll("button")
@@ -29,21 +29,21 @@ var times = [
 ];
 /*/ time block /*/
 for (var i = 0; i < timesList.length; i++) {
-    var row1 = $("<div class='row time-block'>").attr("id", times[i]);
-    var div1 = $("<div class='hour col-1'>")
-    var div2 = $("<textarea class='col-10'>");
-    var button1 = $("<button type='button' class='saveBtn col-1 far fa-save'>");
+    var rowA = $("<div class='row time-block'>").attr("id", times[i]);
+    var divA = $("<div class='hour col-1'>")
+    var divB = $("<textarea class='col-10'>");
+    var buttonA = $("<button type='button' class='saveBtn col-1 far fa-save'>");
 
-    timeBlock.append(row1)
+    timeBlock.append(rowA);
     
-    div2.text(timesList[i]);
-    row1.append(div1);
+    divA.text(timesList[i]);
+    rowA.append(divA);
    
-    div2.text();
-    row1.append(div2);
+    divB.text();
+    rowA.append(divB);
     
-    button1.text();
-    row1.append(button1);
+    buttonA.text();
+    rowA.append(buttonA);
 
 }
 
