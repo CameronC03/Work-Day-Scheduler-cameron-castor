@@ -1,5 +1,6 @@
-
-# Work-Day-Scheduler-cameron-castor![screencapture-file-C-Users-camer-Desktop-bootcamp6-working-materials-Work-Day-Scheduler-cameron-castor-index-html-2021-10-04-15_29_07](https://user-images.githubusercontent.com/88913327/135927444-0c1a5cfd-d660-453b-b59a-ffe9a166c97a.png)
+![screencapture-file-C-Users-camer-Desktop-bootcamp6-working-materials-Work-Day-Scheduler-cameron-castor-index-html-2021-10-11-16_11_37](https://user-images.githubusercontent.com/88913327/136861580-db9b3fb1-d889-46b3-b2bd-8a09a2b70211.png)
+The problem was i had back ticks instead of single quotes in my code i changed around var names thinking it was thr poblem then i seen this problem and fixed it and it resolved all my issues.
+https://cameronc03.github.io/Work-Day-Scheduler-cameron-castor/
 I made this calendar with java script and it uses moment and jquery to function it was challenging but overall fun.
 ## User Story
 AS AN employee with a busy schedule
